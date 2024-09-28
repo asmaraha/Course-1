@@ -1,0 +1,15 @@
+.mask-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f0f0f0;
+}
+
+.masked-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    mask-image: radial-gradient(circle at center, black 50%, transparent 51%);
+    -webkit-mask-image: radial-gradient(circle at center, black 50%, transparent 51%);
+}

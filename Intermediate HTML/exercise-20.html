@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use the <canvas> Tag</title>
+</head>
+<body>
+    <h3>Canvas Drawing Example</h3>
+    <p>Below is a simple rectangle and circle drawn using the &lt;canvas&gt; element.</p>
+
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = '#4CAF50';
+        ctx.fillRect(50, 50, 150, 100);
+
+        ctx.beginPath();
+        ctx.arc(300, 150, 50, 0, 2 * Math.PI);
+        ctx.fillStyle = '#FF5733';
+        ctx.fill();
+        ctx.stroke();
+    </script>
+    <br>
+    <a href="exercise-19.html">Previous page /</a>
+    <a href="../index.html">Home page</a>
+</body>
+</html>

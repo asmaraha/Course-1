@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Accessible Form</title>
+</head>
+<body>
+    <h3>Accessible Registration Form</h3>
+
+    <form action="#" method="post" aria-labelledby="form-title">
+        <h4 id="form-title">Registration Form</h4>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" aria-required="true" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" required>
+        <br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" aria-required="true" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" aria-required="true" aria-describedby="password-desc" required>
+        <br>
+        <span id="password-desc" aria-live="polite">Your password must be at least 8 characters long.</span>
+        <br>
+
+        <label for="language">Preferred Language:</label>
+        <select id="language" name="language" aria-required="true">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+        </select>
+        <br>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" aria-multiline="true"></textarea>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+
+    <a href="exercise-12.html">Previous page /</a>
+    <a href="../index.html">Home page /</a>
+    <a href="exercise-14.html">Next page</a>
+</body>
+</html>

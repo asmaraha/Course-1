@@ -1,0 +1,33 @@
+.progress-container {
+    width: 80%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 15px 0 0 15px;
+    transition: width 0.3s ease;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

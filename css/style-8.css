@@ -1,0 +1,30 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: calc(33.33% - 16px);
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}

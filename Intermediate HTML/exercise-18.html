@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Implement a Modal Popup</title>
+</head>
+<body>
+    <h3>Modal Popup Example</h3>
+
+    <button class="open-modal-btn">Open Modal</button>
+
+    <div id="myModal">
+        <div>
+            <span class="close-btn">&times;</span>
+            <h2>Modal Title</h2>
+            <p>This is a simple modal popup example. You can add any content here.</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("myModal");
+
+        const openBtn = document.querySelector(".open-modal-btn");
+
+        const closeBtn = document.querySelector(".close-btn");
+
+        openBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+    <br>
+    <a href="exercise-17.html">Previous page /</a>
+    <a href="../index.html">Home page /</a>
+    <a href="exercise-19.html">Next page</a>
+</body>
+</html>

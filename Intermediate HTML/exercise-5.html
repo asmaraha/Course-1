@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Responsive Image Gallery</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        figure {
+            overflow: hidden;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        figure:hover img {
+            transform: scale(1.05);
+        }
+        figcaption {
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h3>Responsive Image Gallery</h3>
+
+    <div class="gallery">
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Sample Image 1">
+            <figcaption>Image Caption 1</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Sample Image 2">
+            <figcaption>Image Caption 2</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Sample Image 3">
+            <figcaption>Image Caption 3</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Sample Image 4">
+            <figcaption>Image Caption 4</figcaption>
+        </figure>
+    </div>
+    <a href="exercise-4.html">Previous page /</a>
+    <a href="../index.html">Home page /</a>
+    <a href="exercise-6.html">Next page</a>
+</body>
+</html>

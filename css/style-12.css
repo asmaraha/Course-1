@@ -1,0 +1,43 @@
+.accordion {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-title {
+    display: block;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-title:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+}
+
+.accordion-checkbox:checked + .accordion-title + .accordion-content {
+    max-height: 200px;
+    padding: 15px;
+}

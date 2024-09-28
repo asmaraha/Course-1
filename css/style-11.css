@@ -1,0 +1,29 @@
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-list li {
+    position: relative;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.custom-list li:before {
+    content: "★";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.custom-list li:hover {
+    background-color: #e0e0e0;
+}

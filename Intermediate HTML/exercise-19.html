@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Custom Icons Using Fonts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+          }
+
+          .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+          }
+
+          .icon {
+            font-size: 48px;
+            transition: color 0.3s;
+            cursor: pointer;
+          }
+
+          .icon:hover {
+            color: #4CAF50;
+          }
+    </style>
+
+</head>
+<body>
+    <h3>FontAwesome Icons Example</h3>
+
+    <p>Click on the icons below:</p>
+
+    <div class="icon-container">
+        <i class="fas fa-home icon" title="Home"></i>
+        <i class="fas fa-user icon" title="User"></i>
+
+        <i class="fas fa-envelope icon" title="Contact"></i>
+
+        <i class="fas fa-shopping-cart icon" title="Cart"></i>
+    </div>
+    <a href="exercise-18.html">Previous page /</a>
+    <a href="../index.html">Home page /</a>
+    <a href="exercise-20.html">Next page</a>
+</body>
+</html>
