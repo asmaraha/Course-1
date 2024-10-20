@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+          }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Validate Email Format</h1>
+
+    <label for="emailInput">Enter an email address:</label>
+    <input type="text" id="emailInput" placeholder="Enter email address" />
+
+    <button onclick="validateEmail()">Validate Email</button>
+
+    <h2 id="result"></h2>
+
+    <script src="Task-2.js"></script>
+    <a href="Task-1.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-3.html">Next page</a>
 </body>
 </html>
+

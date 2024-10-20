@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Substring Presence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: 100%;
+        }
+        #result {
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Check if One String is a Substring of Another</h1>
+
+    <label for="mainStringInput">Enter the main string:</label>
+    <input type="text" id="mainStringInput" placeholder="Enter main string" />
+
+    <label for="substringInput">Enter the substring to check:</label>
+    <input type="text" id="substringInput" placeholder="Enter substring" />
+
+    <button onclick="checkSubstring()">Check Substring</button>
+
+    <h2 id="result"></h2>
+
+    <script src="Task-9.js"></script>
+    <a href="Task-8.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-10.html">Next page</a>
 </body>
 </html>

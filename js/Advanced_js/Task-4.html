@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Pipeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: 100%;
+        }
+        #result {
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Function Pipeline</h1>
+
+    <label for="inputValue">Enter a value:</label>
+    <input type="text" id="inputValue" placeholder="Enter a number or string" />
+
+    <button onclick="runPipeline()">Run Pipeline</button>
+
+    <h2>Pipeline Result</h2>
+    <pre id="result"></pre>
+
+    <script src="Task-4.js"></script>
+    <a href="Task-3.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-5.html">Next page</a>
 </body>
 </html>

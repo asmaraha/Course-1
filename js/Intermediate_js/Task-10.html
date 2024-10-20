@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Generate Fibonacci Sequence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #result {
+            white-space: pre-wrap;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Generate Fibonacci Sequence</h1>
+
+    <label for="numberInput">Enter the number of terms:</label>
+    <input type="number" id="numberInput" placeholder="Enter a positive integer" />
+
+    <button onclick="generateFibonacci()">Generate Sequence</button>
+
+    <h2>Fibonacci Sequence:</h2>
+    <div id="result"></div>
+
+    <script src="Task-10.js"></script>
+    <a href="Task-9.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-11.html">Next page</a>
 </body>
 </html>

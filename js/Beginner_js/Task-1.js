@@ -1,6 +1,12 @@
-function sumOfTwoNumbers(num1, num2) {
-    return num1 + num2;
-}
+function calculateSum() {
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
 
-const result = sumOfTwoNumbers(5, 7);
-console.log(result); // Output: 12
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById('result').innerText = 'Please enter valid numbers.';
+        return;
+    }
+    let sum = num1 + num2;
+
+    document.getElementById('result').innerText = `The result is: ${sum}`;
+}

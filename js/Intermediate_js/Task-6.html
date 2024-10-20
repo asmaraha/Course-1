@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Anagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        #result {
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Check if Two Strings Are Anagrams</h1>
+
+    <label for="string1Input">Enter first string:</label>
+    <input type="text" id="string1Input" placeholder="First string" />
+    <br>
+    <label for="string2Input">Enter second string:</label>
+    <input type="text" id="string2Input" placeholder="Second string" />
+    <br>
+    <button onclick="checkAnagram()">Check Anagram</button>
+
+    <h2 id="result"></h2>
+
+    <script src="Task-6.js"></script>
+    <a href="Task-5.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-7.html">Next page</a>
 </body>
 </html>

@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 1px solid #ddd;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Lazy Loading Images</h1>
+
+    <div class="image-container">
+        <img data-src="../../img/Moon.jpg" alt="Image 1" class="lazy-image" />
+    </div>
+
+    <div class="image-container">
+        <img data-src="../../img/Snow.jpg" alt="Image 2" class="lazy-image" />
+    </div>
+
+    <div class="image-container">
+        <img data-src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3" class="lazy-image" />
+    </div>
+
+    <div class="image-container">
+        <img data-src="https://via.placeholder.com/600x400?text=Image+4" alt="Image 4" class="lazy-image" />
+    </div>
+
+    <div class="image-container">
+        <img data-src="https://via.placeholder.com/600x400?text=Image+5" alt="Image 5" class="lazy-image" />
+    </div>
+
+    <script src="Task-5.js"></script>
+    <a href="Task-4.html">Previous page /</a>
+    <a href="../../index.html">Home page</a>
 </body>
 </html>

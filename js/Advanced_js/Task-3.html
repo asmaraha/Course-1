@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drag and Drop UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            border: 2px dashed #ccc;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            cursor: grab;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Drag and Drop UI</h1>
+
+    <div class="container" id="dropZone">
+        <div class="draggable" draggable="true" id="item1">Item 1</div>
+        <div class="draggable" draggable="true" id="item2">Item 2</div>
+        <div class="draggable" draggable="true" id="item3">Item 3</div>
+        <div class="draggable" draggable="true" id="item4">Item 4</div>
+    </div>
+
+    <script src="Task-3.js"></script>
+    <a href="Task-2.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-4.html">Next page</a>
 </body>
 </html>

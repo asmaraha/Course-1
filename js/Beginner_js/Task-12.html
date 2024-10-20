@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Generate a Random Number</h1>
+
+    <label for="minInput">Enter minimum value:</label>
+    <input type="number" id="minInput" placeholder="Minimum value" />
+    <br>
+    <label for="maxInput">Enter maximum value:</label>
+    <input type="number" id="maxInput" placeholder="Maximum value" />
+    <br>
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+
+    <h2 id="result"></h2>
+
+    <script src="Task-12.js"></script>
+    <a href="Task-11.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-13.html">Next page</a>
 </body>
 </html>

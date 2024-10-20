@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttle a Function</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            width: 100%;
+        }
+        #result {
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Throttle a Function Example</h1>
+
+    <label for="throttleInput">Type something (throttled input):</label>
+    <input type="text" id="throttleInput" placeholder="Start typing..." oninput="handleInput()" />
+
+    <h2>Throttled Output</h2>
+    <div id="result"></div>
+
+    <script src="Task-14.js"></script>
+    <a href="Task-13.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-15.html">Next page</a>
 </body>
 </html>

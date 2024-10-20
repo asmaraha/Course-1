@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+      }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Convert Celsius to Fahrenheit</h1>
+
+    <label for="celsiusInput">Enter temperature in Celsius:</label>
+    <input type="number" id="celsiusInput" placeholder="Enter Celsius" />
+
+    <button onclick="convertToFahrenheit()">Convert</button>
+
+    <h2 id="result"></h2>
+
+    <script src="Task-4.js"></script>
+    <a href="Task-3.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-5.html">Next page</a>
 </body>
 </html>

@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTTP Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea, input, button, select {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #response {
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Basic HTTP Client</h1>
+
+    <label for="requestType">Select Request Type:</label>
+    <select id="requestType">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+    </select>
+
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput" placeholder="Enter the request URL" />
+
+    <label for="dataInput">Enter Data (for POST and PUT requests):</label>
+    <textarea id="dataInput" placeholder='Enter JSON data, e.g., {"name": "John"}'></textarea>
+
+    <button onclick="sendRequest()">Send Request</button>
+
+    <h2>Response</h2>
+    <pre id="response"></pre>
+
+    <script src="Task-2.js"></script>
+    <a href="Task-1.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-3.html">Next page</a>
 </body>
 </html>

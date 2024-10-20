@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Property Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <h1>Object Property Manipulation</h1>
+
+    <h2>Current Object</h2>
+    <pre id="objectDisplay"></pre>
+
+    <label for="keyInput">Property Key:</label>
+    <input type="text" id="keyInput" placeholder="Enter property key" />
+    <br>
+    <label for="valueInput">Property Value:</label>
+    <input type="text" id="valueInput" placeholder="Enter property value" />
+    <br>
+    <button onclick="addOrUpdateProperty()">Add/Update Property</button>
+    <button onclick="removeProperty()">Remove Property</button>
+    <br>
+    <script src="Task-3.js"></script>
+    <a href="Task-2.html">Previous page /</a>
+    <a href="../../index.html">Home page /</a>
+    <a href="Task-4.html">Next page</a>
 </body>
 </html>
